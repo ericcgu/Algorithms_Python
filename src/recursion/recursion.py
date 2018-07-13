@@ -34,5 +34,3 @@ def fib_rec(n):
         return n
     return fib_rec(n - 1) + fib_rec(n - 2)
 
-print(fib_rec(10))
-print(fib_iter(10))
