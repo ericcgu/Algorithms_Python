@@ -16,3 +16,27 @@ def test_number_sum(n, number_sum):
 
 def test_digit_sum(n, digit_sum):
     assert recursion.digit_sum(n) == digit_sum
+
+@pytest.mark.parametrize("n, fib", [
+    (10, 55),
+    (8, 21),
+])
+
+def test_fib_iter(n, fib):
+    assert recursion.fib_iter(n) == fib
+
+@pytest.mark.parametrize("n, fib", [
+    (10, 55),
+    (8, 21),
+])    
+
+def test_fib_rec(n, fib):
+    assert recursion.fib_rec(n) == fib    
+
+@pytest.mark.parametrize("str, reverse", [
+    ('abc', 'cba'),
+
+])    
+
+def test_reverse(str, reverse):
+    assert recursion.reverse_string(str) == reverse        
