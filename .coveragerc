@@ -1,2 +1,2 @@
 [run]
-omit = algo_env/*
+omit = algo_env/*, tests/*, 
