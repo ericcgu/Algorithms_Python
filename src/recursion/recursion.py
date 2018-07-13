@@ -7,5 +7,5 @@ pp = pprint.PrettyPrinter(width=700)
 def rec_sum(n):
     if n == 0:
         return 0 
-    return rec_sum(n-1) + n
+    return n + rec_sum(n-1)
 
