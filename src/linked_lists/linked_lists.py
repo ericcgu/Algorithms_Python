@@ -35,4 +35,22 @@ b.prev_node = a
 b.next_node = c
 c.prev_node = b
 
+def cycle_check(node):
+    '''
+    Return True if Linked List contains a cycle
 
+    '''
+    counter = set()
+    
+    while node:
+        if node in counter:
+            return True
+        else:
+            counter.add(node)
+            node = node.nextnode
+    return False
+
+def reverse(node):
+    current = head
+    previous = None
+    next = None
