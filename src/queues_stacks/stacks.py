@@ -1,5 +1,6 @@
 #Stacks are LIFO
-#Push Stack on the bottom of Stack
+#Push items to the back and pop them off
+#These work like lists
 
 class Stack(object):
     def __init__(self):
