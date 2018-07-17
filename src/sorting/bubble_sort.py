@@ -4,7 +4,7 @@
 my_list = [12, 5, 13, 8, 9, 65]
 
 def bubble_sort(arr):
-    sorted = True
+    sorted = False
     length = len(arr)-1
     while not sorted:
         sorted = True
