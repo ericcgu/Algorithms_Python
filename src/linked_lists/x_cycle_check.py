@@ -1,17 +1,12 @@
 #Return True if Linked List contains a cycle
 
-def cycle_check(node):
+def has_cycle(head):
     counter = set()
     
-    while node:
-        if node in counter:
+    while head is not None:
+        if head in counter:
             return True
         else:
-            counter.add(node)
-            node = node.nextnode
-    return False
+            counter.add(head)
+            head = head.next
 
-def reverse(node):
-    current = head
-    previous = None
-    next = None

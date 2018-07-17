@@ -3,7 +3,6 @@ import sys
 import functools
 
 
-
 def number_sum(n):
     if n == 0:
         return 0 
