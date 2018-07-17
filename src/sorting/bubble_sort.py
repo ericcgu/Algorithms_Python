@@ -3,15 +3,15 @@
 
 my_list = [12, 5, 13, 8, 9, 65]
 
-def bubble_sort(arr):
+def bubble_sort(arrayay):
     sorted = False
-    length = len(arr)-1
+    length = len(arrayay)-1
     while not sorted:
         sorted = True
-        for index, value in enumerate(arr[:length]):
-            if arr[index] > arr[index+1]:
+        for index, value in enumerate(array[:length]):
+            if array[index] > array[index+1]:
                 sorted = False
-                arr[index], arr[index+1] = arr[index+1], arr[index]
-    return arr
+                array[index], array[index+1] = array[index+1], array[index]
+    return array
     
 print(bubble_sort(my_list))
