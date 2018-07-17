@@ -1,14 +1,14 @@
 def reverse(head):
-    curr = None
+    curr_node = None
 
     while head:
 
-        nxt = head.next
-        curr = head
+        next_node = head.next
+        curr_node = head
         
         head.next = head.prev
-        head.prev = nxt
+        head.prev = next_node
         
-        head = nxt
+        head = next_node
     
-    return curr
+    return curr_node

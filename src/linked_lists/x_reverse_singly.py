@@ -6,16 +6,20 @@ class Single_Link_Node(object):
 
 
 def reverse(head):
-    current_node = head
-    previous_node = None
     next_node = None
+    curr_node = None
+    prev_node = None
 
-    while (current_node):
-        next_node = current_node.next_node #SAVING B
-        current_node.next_node = previous_node 
 
-        previous_node = current_node
-        current_node = next_node
+    while (head):
+        next_node = head.next_node 
+        curr_node = head
+
+        head.next_node = prev_node 
+
+        head = next_node
+        prev_node = curr_node
+    return curr_node
 
 
 a = Single_Link_Node(1)
