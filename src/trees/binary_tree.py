@@ -1,10 +1,22 @@
 
 class BinaryTree(object):
-    def __init__(self, root):
-        self.key = root
+    def __init__(self, value = None):
+        self.value = value
         self.left = None
         self.right = None
+
+    def _is_parent(node):
+        return bool(node.left or node.right)
+
+    def _is_interior(self, node):
+        return (not node == self.root) and self.is_parent(node)
+
+    def _is_leaf(self, node):
+        return (not node == self.root) and not self.is_interior(node)
     
+    
+
+
     def insert_left(self, node):
         if self.left == None:
             self.left = BinaryTree(node)
