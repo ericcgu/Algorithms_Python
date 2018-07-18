@@ -1,11 +1,12 @@
 #bubble sort 
 #bubbles the largest value to the top
+#Best: O(N), Worst:O(N^2
 
 my_list = [12, 5, 13, 8, 9, 65]
 
-def bubble_sort(arrayay):
+def bubble_sort(array):
     sorted = False
-    length = len(arrayay)-1
+    length = len(array)-1
     while not sorted:
         sorted = True
         for index, value in enumerate(array[:length]):

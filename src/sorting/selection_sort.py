@@ -1,6 +1,6 @@
 #selection sort 
 #creates a sorted and unsorted. moves the max from the unsorted to the sorted array
-
+#O(n^2)
 my_list = [12, 5, 13, 8, 9, 65]
 
 def selection_sort(array):

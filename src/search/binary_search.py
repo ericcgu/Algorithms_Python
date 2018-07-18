@@ -1,3 +1,5 @@
+#time complexity: O(log n) 
+
 def binarysearch(sequence, value):
     low = 0
     high = len(sequence) - 1
