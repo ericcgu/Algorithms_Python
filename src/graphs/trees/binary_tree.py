@@ -59,7 +59,7 @@ tree.insert_left('f')
 tree.insert_left('g')
 tree.insert_right('c')
 
-
+dict.fromkeys
 def preorder(tree):
     if tree:
         print(tree.key)

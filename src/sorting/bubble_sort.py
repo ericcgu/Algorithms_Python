@@ -1,6 +1,6 @@
 #bubble sort 
 #bubbles the largest value to the top
-#Best: O(N), Worst:O(N^2
+#Best: O(N), Worst:O(N^2)
 
 my_list = [12, 5, 13, 8, 9, 65]
 

@@ -1,4 +1,4 @@
-import urllib.request 
+import urllib 
 from multiprocessing.dummy import Pool as ThreadPool 
 
 urls = [
@@ -17,7 +17,7 @@ pool = ThreadPool(4)
 
 # open the urls in their own threads
 # and return the results
-results = pool.map(urllib.request.urlopen, urls)
+results = pool.map(urllib.urlopen, urls)
 print(results)
 # close the pool and wait for the work to finish 
 pool.close() 
